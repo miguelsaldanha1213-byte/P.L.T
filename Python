@@ -1,0 +1,36 @@
+print("--- SISTEMA DE APOIO AO ESTUDANTE ---")
+print("Escolha uma unidade")
+escolha = input("Digite 1 para Matemática, 2 para Física e 3 para Raciocínio Lógico: ").lower()
+
+# --- UNIDADE 1: MATEMÁTICA ---
+if escolha == "1":
+    resposta = input("Integral, derivada ou limites? ").lower()
+    if resposta == "integral":
+        print("\n[MATEMÁTICA] INTEGRAL: Calcula o acúmulo de quantidades e a área sob uma curva. É o inverso da derivada.")
+    elif resposta == "derivada":
+        print("\n[MATEMÁTICA] DERIVADA: Representa a taxa de variação instantânea. É a inclinação da reta tangente ao gráfico.")
+    elif resposta == "limites":
+        print("\n[MATEMÁTICA] LIMITES: Estuda o comportamento de uma função conforme ela se aproxima de um valor específico.")
+
+# --- UNIDADE 2: FÍSICA ---
+elif escolha == "2":
+    resposta = input("Mecânica, Termodinâmica ou Óptica? ").lower()
+    if resposta == "mecânica" or resposta == "mecanica":
+        print("\n[FÍSICA] MECÂNICA: Estuda o movimento e as forças que os produzem (Leis de Newton, energia, trabalho).")
+    elif resposta == "termodinâmica" or resposta == "termodinamica":
+        print("\n[FÍSICA] TERMODINÂMICA: Foca no calor, temperatura e como essa energia se transforma em trabalho.")
+    elif resposta == "óptica" or resposta == "optica":
+        print("\n[FÍSICA] ÓPTICA: Estuda a luz e os fenômenos visuais, como reflexão, refração e lentes.")
+
+# --- UNIDADE 3: RACIOCÍNIO LÓGICO ---
+elif escolha == "3":
+    resposta = input("Proposições, Tabelas Verdade ou Silogismos? ").lower()
+    if resposta == "proposições" or resposta == "proposicoes":
+        print("\n[LÓGICA] PROPOSIÇÕES: Frases que podem ser julgadas como verdadeiras ou falsas (V ou F).")
+    elif resposta == "tabelas verdade" or resposta == "tabela verdade":
+        print("\n[LÓGICA] TABELAS VERDADE: Mostram os valores lógicos de uma combinação de proposições baseada em conectivos (E, OU, SE...ENTÃO).")
+    elif resposta == "silogismos":
+        print("\n[LÓGICA] SILOGISMOS: Argumentos onde se chega a uma conclusão lógica a partir de duas premissas.")
+
+else:
+    print("Opção inválida. Por favor, reinicie e digite 1, 2 ou 3.")
